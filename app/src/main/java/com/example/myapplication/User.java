@@ -9,7 +9,10 @@ import java.util.UUID;
     private UUID uuid;
 
     public User() {
-        this.uuid = UUID.randomUUID();
+        this(UUID.randomUUID()); // При создании нового пользователя
+    }
+    public User(UUID uuid){
+        this.uuid = uuid; //При создании существующего пользователя
     }
 
     public String getUserName() {
