@@ -16,7 +16,7 @@ public class UserList {
     private static UserList userList;
     private Context context;
     private SQLiteDatabase database;
-    private List users = new ArrayList();
+    private List users;
     public static UserList get(Context context){
         if(userList == null){
             userList = new UserList(context);
@@ -28,6 +28,7 @@ public class UserList {
         database = new UserBaseHelper(context).getWritableDatabase();
     }
     public List getUsers(){
+        users = new ArrayList();
         UserCursorWrapper cursor = queryUsers(null,null);
         try {
             cursor.moveToFirst();
@@ -63,5 +64,18 @@ public class UserList {
                 null,
                 null);
         return new UserCursorWrapper(cursor);
+    }
+
+    public void updateUser(User user){
+        String uuidString = user.getUuid().toString();
+        ContentValues values = getContentValues(user);
+
+        database.update(UserDbSchema.UserTable.NAME,values,
+                UserDbSchema.UserTable.Cols.UUID+"=?",
+                new String[]{uuidString});
+    }
+
+    public void deleteUser(){
+        // Удаляем пользователя
     }
 }
