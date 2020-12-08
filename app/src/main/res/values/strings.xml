@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">База неДанных</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit">РЕДАКТИРОВАТЬ</string>
+    <string name="editName">Поменять имя</string>
+    <string name="editLastname">Поменять фамилию</string>
+    <string name="makeChanges">Внести изменения</string>
+    <string name="deleteUser">Удалить пользователя</string>
+    <string name="addUser">Добавить пользователя</string>
+    <string name="name">Имя:</string>
+    <string name="nameEditText">Введите имя</string>
+    <string name="lastname">Фамилия:</string>
+    <string name="lastnameEditText">Введите фамилию</string>
+
 </resources>

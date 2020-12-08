@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- comment   -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:padding="15dp"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".AddUser"
     android:orientation="vertical">
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/nameEditText"
-        android:id="@+id/nameEditText"/>
+        android:id="@+id/nameEditText1"/>
     <TextView
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
@@ -29,12 +27,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/lastnameEditText"
-        android:id="@+id/lastnameEditText"/>
+        android:id="@+id/lastnameEditText1"/>
     <Button
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/addUser"
-        android:id="@+id/addUserBtn"/>
-
+        android:id="@+id/addUserBtn1"/>
 </LinearLayout>
